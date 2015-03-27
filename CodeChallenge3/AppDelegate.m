@@ -17,7 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self loadStyle];
     return YES;
+}
+
+- (void)loadStyle {
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    navBar.barTintColor = [UIColor colorWithRed:0.10 green:0.53 blue:0.76 alpha:1.00];
+    navBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

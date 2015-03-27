@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  CodeChallenge3
 //
 //  Created by Vik Denic on 10/16/14.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BikeModel.h"
 
-@interface ViewController : UIViewController
+@interface MapViewController : UIViewController
 
+@property BikeModel *selectedBike;
 
 @end
-
